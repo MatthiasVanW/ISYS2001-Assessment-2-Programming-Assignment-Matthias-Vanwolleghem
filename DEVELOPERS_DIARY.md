@@ -7,7 +7,7 @@
   2. "Help me outline the pseudocode for a Personal Spending Analyser app using the Six-Step Method."
   3. "Provide a clean, structured template for a Developer's Diary to log my daily objectives, AI prompts, actions taken, and reasoning clearly for my lecturer."
 * **AI Output**: 
-  1. Generated a quick verification snippet using `google-genai` to test the API connection.
+  1. Generated a quick verification snippet using `google.colab.userdata` and `google.generativeai` to test the API connection.
   2. Provided pseudocode for the `Transaction` and `FinanceManager` classes.
   3. Formatted a clear, professional Markdown outline for documenting daily progress.
 * **Action Taken**: Verified that the Gemini API connected successfully using `gemini-3.8-flash` and refined the pseudocode to match my exact project structure. I explicitly restricted my AI usage to pseudocode guidance and API connectivity testing.
