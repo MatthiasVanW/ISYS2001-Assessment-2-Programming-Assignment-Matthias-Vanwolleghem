@@ -3,7 +3,9 @@
 ## October 12, 2026
 * **Objective**: Define project scope, set up the repository, configure API security and write the Six-Step Method design process.
 * **Prompt given to AI**: 
-  1. "Write a Python script to verify if my Gemini API key is correctly uploaded to Google Colab Secrets and functioning."
+  1. "Write a Python script to verify if my Gemini API key is correctly uploaded to Google Colab Secrets and functioning." <img width="606" height="582" alt="image" src="https://github.com/user-attachments/assets/cff70737-1c13-4dcc-80ed-5f1c469fc1a3" />
+ <img width="986" height="523" alt="image" src="https://github.com/user-attachments/assets/6ae41fa8-e6e2-48e6-9e87-c98deb673178" />
+
   2. "Help me outline the pseudocode for a Personal Spending Analyser app using the Six-Step Method."
   3. "Provide a clean, structured template for a Developer's Diary to log my daily objectives, AI prompts, actions taken and reasoning clearly for my lecturer."
 * **AI Output**: 
