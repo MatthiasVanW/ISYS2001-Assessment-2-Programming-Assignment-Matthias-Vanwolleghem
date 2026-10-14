@@ -37,6 +37,6 @@ The Gemini API key is stored using Google Colab Secrets (`GEMINI_API_KEY`)
 [x] step 2: inputs and outputs
 [x] step 3: example by hand
 [x] step 4: pseudocode
-[ ] step 5: python implementation
-[ ] step 6: testing
+[o] step 5: python implementation
+[o] step 6: testing
 
