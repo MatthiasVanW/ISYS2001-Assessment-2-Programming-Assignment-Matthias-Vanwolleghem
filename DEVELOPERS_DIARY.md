@@ -46,8 +46,8 @@
 * **Objective**: Finish Gradio UI and test/resolve edge cases.
 
 * **Prompt given to AI**:
-1. Gradio UI Layout & Architecture: "How can I structure a Gradio UI using `gr.Blocks()` to separate raw spending analytics from an LLM coaching response while keeping the interface clean and interactive?"
-2. European Excel CSV Parsing & Date Edge Cases: "My Pandas `read_csv` fails when ingesting European Excel CSVs that use semicolons `;`, comma decimals (`$45,50`), and dates like `1/10/2026`. How can I make `load_from_dataframe` robust enough to parse both US and European formats automatically?"
+1. Gradio UI layout & architecture: "How can I structure a Gradio UI using `gr.Blocks()` to separate raw spending analytics from an LLM coaching response while keeping the interface clean and interactive?"
+2. European excel CSV parsing & date edge cases: "My Pandas `read_csv` fails when ingesting European Excel CSVs that use semicolons `;`, comma decimals (`$45,50`), and dates like `1/10/2026`. How can I make `load_from_dataframe` robust enough to parse both US and European formats automatically?"
 3. API Rate Limit: "I received an HTTP 429 Quota Exceeded error from `gemini-3.8-flash`. What are the options that I can go through with?"
 
 * **AI Output**:
@@ -65,4 +65,17 @@ Reasoning: After reviewing the options provided by AI (billing upgrade vs. key r
 - Support European Excel Defaults Out-of-the-Box
 Reasoning: Practical testing revealed that users like me exporting CSVs from European versions of Excel encounter different delimiters (`;`) and decimal separators (`,`) and date formats like `1/10/2026`. Resolving this in `FinanceManager` drastically improves user experience and prevents silent data parsing crashes.
 
-# TMR: SCREENSHOTS TOEVOEGEN AAN OKTOBER 14
+## October 15, 2026
+* **Objective**: Complete testing and add screenshots, fix small bugs and errors and improve test layout
+
+* **Prompt given to AI**:
+1. Test dataset generation & edge cases: "Can you help me generate datasets (missing data, extra columns, extreme dataset sizes and invalid files) to thoroughly test my application?"
+2. Code debugging & explanations for fixes: "My UI shows static `($10/beer)` labels and entering $0 or negative values causes issues. Why did my previous code fail, how can I fix it and why does the new validation logic work?"
+
+* **AI Output**:
+
+1. Generated structured edge-case test scenarios and edge datasets to evaluate schema validation, missing field handling, non-CSV file uploads, and boundary value inputs.
+2. Provided code refactoring solutions with detailed explanations:
+
+* Adding dynamic string formatting (`${beer_price:.0f}/beer`) so output labels adjust to user inputs.
+* Implementing zero-handling ($0 \rightarrow$ `0 beers` without `ZeroDivisionError`) and `abs()` conversion for negative inputs (assuming accidental typos) to guarantee logical metrics across all scenarios.
