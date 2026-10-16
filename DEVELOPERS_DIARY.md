@@ -79,3 +79,12 @@ Reasoning: Practical testing revealed that users like me exporting CSVs from Eur
 
 * Adding dynamic string formatting (`${beer_price:.0f}/beer`) so output labels adjust to user inputs.
 * Implementing zero-handling ($0 \rightarrow$ `0 beers` without `ZeroDivisionError`) and `abs()` conversion for negative inputs (assuming accidental typos) to guarantee logical metrics across all scenarios.
+
+## October 16, 2026
+* **Objective**: Perform final code/notebook cleanup, finalize `README.md` documentation and prepare the project repository for final submission.
+
+* **Prompt given to AI**:
+1. Documentation & Readme Finalization: "Can you help me complete and format my `README.md` to cleanly include setup instructions and a structured summary table for my 8 core test cases?"
+
+* **AI Output**:
+1. Generated a professional `README.md` layout featuring clear setup steps and an organized 8-scenario testing table.
